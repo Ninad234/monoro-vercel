@@ -30,7 +30,7 @@ const CheckoutForm = () => {
     setSuccess('');
     try {
       // Create payment intent
-      const res = await axios.post('http://localhost:4001/payment/create-payment-intent', {
+      const res = await axios.post('https://monoro-backend.onrender.com/payment/create-payment-intent', {
         amount: Math.round(total * 100), // Stripe expects amount in paise
       });
       const clientSecret = res.data.clientSecret;
@@ -46,7 +46,7 @@ const CheckoutForm = () => {
       } else if (result.paymentIntent.status === 'succeeded') {
         setSuccess('Payment successful!');
         // Create order in backend
-        await axios.post('http://localhost:4001/orders', {
+        await axios.post('https://monoro-backend.onrender.com/orders', {
           userId: authUser._id,
           items: cart.map(item => ({ product: item.product._id, quantity: item.quantity })),
           total,
