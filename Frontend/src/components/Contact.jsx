@@ -14,7 +14,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      await axios.post('http://localhost:4001/contact', form);
+      await axios.post('https://monoro-backend.onrender.com/contact', form);
       toast.success("Thank you for contacting us! We'll get back to you soon.");
       setForm({ name: '', email: '', message: '' });
     } catch (error) {
