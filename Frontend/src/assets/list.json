@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Women Round Neck Cotton Top",
+    "image": "/assets/images/women round neck cotton top.jpeg",
+    "price": 599,
+    "category": "Trending",
+    "rating": 4.7,
+    "description": "Everyday style redefined in this cotton top. Lightweight and versatile for any casual look."
+  },
+  {
+    "id": 2,
+    "name": "Blue Ripped Jeans",
+    "image": "/assets/images/Blue Ripped Jeans.jpeg",
+    "price": 1099,
+    "category": "Flat 28% OFF",
+    "rating": 4.3,
+    "description": "Stay effortlessly cool in these stylish blue ripped jeans. Perfect blend of rugged charm and urban fashion."
+  },
+  {
+    "id": 3,
+    "name": "Unisex White Sneakers",
+    "image": "/assets/images/unisexwhitesneakers.jpeg",
+    "price": 1899,
+    "category": "Trending",
+    "rating": 4.8,
+    "description": "Clean, classic white sneakers to match any outfit. Unisex fit with all-day walking comfort."
+  },
+  {
+    "id": 4,
+    "name": "Boy round neck cotton t-shirt",
+    "image": "/assets/images/boy round neck cotton t-shirt.jpeg",
+    "price": 999,
+    "category": "Flat 28% OFF",
+    "rating": 4.2,
+    "description": "Soft and breathable cotton tee for everyday comfort. Classic round neck design ideal for playful days."
+  },
+  {
+    "id": 5,
+    "name": "Girl round neck cotton top",
+    "image": "/assets/images/girl round neck cotton top.jpeg",
+    "price": 799,
+    "category": "Trending",
+    "rating": 4.5,
+    "description": "Soft and breathable cotton tee for everyday comfort. Classic round neck design ideal for playful days."
+  },
+  {
+    "id": 6,
+    "name": "Kid tapered slim fit trouser",
+    "image": "/assets/images/kid tapered slim fit trouser.jpeg",
+    "price": 1349,
+    "category": "Flat 28% OFF",
+    "rating": 4.6,
+    "description": "Trendy slim fit trousers with a modern tapered cut. Durable and comfy for all-day wear and play."
+  },
+  {
+    "id": 7,
+    "name": "Women zip-front relaxed fit black jacket",
+    "image": "/assets/images/women zip-front relaxed fit black jacket.jpeg",
+    "price": 499,
+    "category": "Trending",
+    "rating": 4.4,
+    "description": "A bold black jacket with easy zip-front styling. Relaxed fit meets sharp, effortless vibes."
+  },
+  {
+    "id": 8,
+    "name": "Women zip-front relaxed fit brown jacket",
+    "image": "/assets/images/women zip-front relaxed fit brown jacket.jpeg",
+    "price": 499,
+    "category": "Trending",
+    "rating": 4.4,
+    "description": "A bold brown jacket with easy zip-front styling. Relaxed fit meets sharp, effortless vibes."
+  },
+  {
+    "id": 9,
+    "name": "Men slim fit relaxed denim jacket",
+    "image": "/assets/images/men slim fit relaxed denim jacket.jpeg",
+    "price": 499,
+    "category": "Flat 28% OFF",
+    "rating": 4.4,
+    "description": "Elevate your streetwear game with this sleek denim jacket. Relaxed fit ensures comfort with every layer."
+  },
+  {
+    "id": 10,
+    "name": "Men tapered fit trousers",
+    "image": "/assets/images/men tapered fit trousers.jpeg",
+    "price": 1349,
+    "category": "Trending",
+    "rating": 4.3,
+    "description": "Smart, tapered design meets everyday elegance. Ideal for both work and weekend wear."
+  },
+  {
+    "id": 11,
+    "name": "Women Round Neck Cotton Gray Top",
+    "image": "/assets/images/women round neck cotton gray top.jpeg",
+    "price": 599,
+    "category": "Flat 28% OFF",
+    "rating": 4.3,
+    "description": "Minimalist gray top in premium cotton fabric. A wardrobe essential with soft elegance."
+  }
+]
+

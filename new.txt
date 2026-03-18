@@ -1,0 +1,29 @@
+// Option 1
+<p className='font-medium text-sm md:text-base'>FRESH DROPS ✨</p>
+<h1 className='playfair-display text-3xl sm:py-2 lg:text-5xl leading-relaxed'>Style For Everyone</h1>
+<p className='font-semibold text-sm md:text-base'>SHOP NOW</p>
+
+// Option 2  
+<p className='font-medium text-sm md:text-base'>NEW VIBES 🔥</p>
+<h1 className='playfair-display text-3xl sm:py-2 lg:text-5xl leading-relaxed'>Crafted For You</h1>
+<p className='font-semibold text-sm md:text-base'>EXPLORE</p>
+
+// Option 3
+<p className='font-medium text-sm md:text-base'>CURATED PICKS 💫</p>
+<h1 className='playfair-display text-3xl sm:py-2 lg:text-5xl leading-relaxed'>Pure Comfort</h1>
+<p className='font-semibold text-sm md:text-base'>DISCOVER</p>
+
+// Option 4
+<p className='font-medium text-sm md:text-base'>HANDPICKED 🎯</p>
+<h1 className='playfair-display text-3xl sm:py-2 lg:text-5xl leading-relaxed'>Made To Last</h1>
+<p className='font-semibold text-sm md:text-base'>GET YOURS</p>
+
+// Option 5
+<p className='font-medium text-sm md:text-base'>SIGNATURE PIECES 🖤</p>
+<h1 className='playfair-display text-3xl sm:py-2 lg:text-5xl leading-relaxed'>Timeless Design</h1>
+<p className='font-semibold text-sm md:text-base'>SHOP NOW</p>
+
+// Option 6
+<p className='font-medium text-sm md:text-base'>PREMIUM QUALITY 💎</p>
+<h1 className='playfair-display text-3xl sm:py-2 lg:text-5xl leading-relaxed'>Everyday Luxury</h1>
+<p className='font-semibold text-sm md:text-base'>INDULGE</p>
