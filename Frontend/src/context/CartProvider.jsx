@@ -10,7 +10,7 @@ export const CartProvider = ({ children }) => {
 
   useEffect(() => {
     if (authUser) {
-      axios.get(`http://localhost:4001/cart/${authUser._id}`)
+      axios.get(`https://monoro-backend.onrender.com/cart/${authUser._id}`)
         .then(res => setCart(res.data.items || []))
         .catch(() => setCart([]));
     } else {
@@ -20,7 +20,7 @@ export const CartProvider = ({ children }) => {
 
   const addToCart = async (product, quantity = 1) => {
     if (!authUser) return;
-    await axios.post(`http://localhost:4001/cart/${authUser._id}`, { productId: product._id, quantity });
+    await axios.post(`https://monoro-backend.onrender.com/cart/${authUser._id}`, { productId: product._id, quantity });
     // Refresh cart
     const res = await axios.get(`http://localhost:4001/cart/${authUser._id}`);
     setCart(res.data.items || []);
@@ -28,21 +28,21 @@ export const CartProvider = ({ children }) => {
 
   const updateCartItem = async (productId, quantity) => {
     if (!authUser) return;
-    await axios.put(`http://localhost:4001/cart/${authUser._id}`, { productId, quantity });
+    await axios.put(`https://monoro-backend.onrender.com/cart/${authUser._id}`, { productId, quantity });
     const res = await axios.get(`http://localhost:4001/cart/${authUser._id}`);
     setCart(res.data.items || []);
   };
 
   const removeCartItem = async (productId) => {
     if (!authUser) return;
-    await axios.delete(`http://localhost:4001/cart/${authUser._id}`, { data: { productId } });
+    await axios.delete(`https://monoro-backend.onrender.com/cart/${authUser._id}`, { data: { productId } });
     const res = await axios.get(`http://localhost:4001/cart/${authUser._id}`);
     setCart(res.data.items || []);
   };
 
   const clearCart = async () => {
     if (!authUser) return;
-    await axios.delete(`http://localhost:4001/cart/${authUser._id}/clear`);
+    await axios.delete(`https://monoro-backend.onrender.com/cart/${authUser._id}/clear`);
     setCart([]);
   };
 
