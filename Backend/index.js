@@ -11,10 +11,13 @@ import contactRoute from './route/contact.route.js';
 const app = express();
 
 app.use(cors({
-    origin: ["https://monoro-vercel.vercel.app", "http://localhost:5173","https://monoro-vercel-jj4ovhsis-ninad234s-projects.vercel.app"], 
-    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"], 
-    credentials: true
+  origin: [
+    "https://monoro-vercel.vercel.app",
+    "http://localhost:5173"
+  ],
+  credentials: true
 }));
+
 
 app.use(express.json());
 
