@@ -14,7 +14,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      await axios.post('https://monoro-backend.onrender.com/contact', form);
+      await axios.post(`${import.meta.env.VITE_API_URL}contact`, form);
       toast.success("Thank you for contacting us! We'll get back to you soon.");
       setForm({ name: '', email: '', message: '' });
     } catch (error) {
