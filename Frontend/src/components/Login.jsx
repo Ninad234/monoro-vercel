@@ -17,7 +17,7 @@ const Login = () => {
       password: data.password,
     };
     await axios
-      .post("https://monoro-backend.onrender.com/users/login", userInfo)
+      .post(`${import.meta.env.VITE_API_URL}users/login`, userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
