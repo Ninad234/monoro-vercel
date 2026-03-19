@@ -18,7 +18,7 @@ const Signup = () => {
         email:data.email,
         password:data.password
       }
-      await axios.post("https://monoro-backend.onrender.com/users/signup", userInfo)
+      await axios.post(`${import.meta.env.VITE_API_URL}users/signup`, userInfo)
       .then((res)=>{
         console.log(res.data)
         if (res.data) {
