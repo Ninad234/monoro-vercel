@@ -30,7 +30,7 @@ const CheckoutForm = () => {
     setSuccess('');
     try {
       // Create payment intent
-      const res = await axios.post('${import.meta.env.VITE_API_URL}payment/create-payment-intent`, {
+      const res = await axios.post('${import.meta.env.VITE_API_URL}/payment/create-payment-intent`, {
         amount: Math.round(total * 100), // Stripe expects amount in paise
       });
       const clientSecret = res.data.clientSecret;
