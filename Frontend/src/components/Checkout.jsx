@@ -8,7 +8,7 @@ import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 
 // IMPORTANT: Add your Stripe publishable key here
-const stripePromise = loadStripe('pk_test_51RnaodFxgc3U9OC38JBaxS75kI6tThUE4H4IyTIpLN0dh2DDclD0wK2KE6nBrhAS8Iu7xfzFTpbWeNImI3RIZZdb00Q19Qiiuu');
+const stripePromise = loadStripe('import.meta.env.VITE_STRIPE_PUBLIC_KEY');
 
 const CheckoutForm = () => {
   const { cart, clearCart } = useCart();
