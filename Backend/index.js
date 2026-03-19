@@ -11,8 +11,11 @@ import contactRoute from './route/contact.route.js';
 const app = express();
 
 app.use(cors({
-    origin: "https://monoro-vercel.vercel.app"
+    origin: ["https://monoro-vercel.vercel.app", "http://localhost:5173"], 
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"], 
+    credentials: true
 }));
+
 app.use(express.json());
 
 dotenv.config();
