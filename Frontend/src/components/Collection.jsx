@@ -13,7 +13,7 @@ const Collection = () => {
   useEffect(() => {
      const getProducts = async () => {
     try {
-      const res = await axios.get("https://monoro-backend.onrender.com/product") 
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/product`) 
       console.log(res.data)
       setProducts(res.data)
     } catch (error) {
