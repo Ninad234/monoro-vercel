@@ -8,7 +8,7 @@ const Orders = () => {
 
   useEffect(() => {
     if (authUser) {
-      axios.get(`https://monoro-backend.onrender.com/orders/user/${authUser._id}`)
+      axios.get(`${import.meta.env.VITE_API_URL}/orders/user/${authUser._id}`)
         .then(res => setOrders(res.data))
         .catch(() => setOrders([]));
     }
