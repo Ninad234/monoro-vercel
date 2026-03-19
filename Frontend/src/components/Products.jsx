@@ -8,7 +8,7 @@ const Products = () => {
   const { addToCart } = useCart();
 
   useEffect(() => {
-    axios.get('https://monoro-backend.onrender.com/product')
+    axios.get(`${import.meta.env.VITE_API_URL}/product`)
       .then(res => setProducts(res.data))
       .catch(err => console.error(err));
   }, []);
