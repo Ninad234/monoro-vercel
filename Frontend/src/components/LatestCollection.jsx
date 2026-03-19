@@ -16,7 +16,7 @@ const LatestCollection = () => {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const res = await axios.get("https://monoro-backend.onrender.com/product")
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}product`)
         const data2 = res.data.filter((item)=> item.category === "Flat 28% OFF")
         console.log(data2)
         setProducts(data2)
