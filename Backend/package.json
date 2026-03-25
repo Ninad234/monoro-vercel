@@ -1,0 +1,31 @@
+{
+  "name": "monoro",
+  "version": "1.0.0",
+  "description": "A E-Commerce Website for fashionista ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ninad234/Monoro.git"
+  },
+  "author": "Ninad Gawade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ninad234/Monoro/issues"
+  },
+  "homepage": "https://github.com/Ninad234/Monoro#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.4",
+    "nodemon": "^3.1.10",
+    "stripe": "^18.3.0"
+  }
+}
