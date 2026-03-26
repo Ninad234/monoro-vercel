@@ -59,10 +59,10 @@ npm start
 
 **Local Development .env Example (Backend):**
 ```
-PORT=4000
+PORT=Frontend port_url
 MongoDBURI=your_mongodb_connection_string
-CLIENT_URL=http://localhost:5173
-STRIPE_SECRET_KEY=your_stripe_secret_key
+CLIENT_URL=get in the terminal by the vs code only.
+STRIPE_SECRET_KEY=your_stripe_secret_key starts with sk_test....
 ```
 
 ```sh
@@ -74,8 +74,8 @@ npm run dev
 
 **Local Development .env.local Example (Frontend):**
 ```
-VITE_API_URL=http://localhost:4000
-VITE_STRIPE_PUBLIC_KEY=your_stripe_public_key
+VITE_API_URL=http://localhost:frontend_port_number (for local you can get it from the vs code or other code editor)
+VITE_STRIPE_PUBLIC_KEY=your_stripe_public_key starts with pk_test...
 ```
 
 ### 4. Production Deployment (Vercel & Render)
@@ -83,20 +83,20 @@ VITE_STRIPE_PUBLIC_KEY=your_stripe_public_key
 **NEVER commit `.env` files to GitHub!** Instead, set these environment variables directly in the deployment dashboards.
 
 **Render (Backend Dashboard):**
-- `PORT`: `4000`
-- `CLIENT_URL`: `https://monoro-frontend.vercel.app` (Your Vercel URL)
+- `PORT`: Your Backend Port Url Here
+- `CLIENT_URL`: (Your Vercel URL)
 - `MongoDBURI`: Your MongoDB Atlas Connection String
 - `STRIPE_SECRET_KEY`: Your Stripe Secret Key (`sk_live_...` or `sk_test_...`)
 
 **Vercel (Frontend Dashboard):**
-- `VITE_API_URL`: `https://monoro-backend.onrender.com` (Your Render URL, no trailing slash)
+- `VITE_API_URL`: (Your Render URL, no trailing slash)
 - `VITE_STRIPE_PUBLIC_KEY`: Your Stripe Public Key (`pk_live_...` or `pk_test_...`)
 
 ---
 
 ## 🖥️ Usage
 
-- Visit `http://localhost:5173` in your browser to access the frontend.
+- Visit `http://localhost:5173`(local) or your vercel url in your browser to access the frontend.
 - Register or login to your account.
 - Browse collections, add products to your cart, and checkout securely.
 - View your order history and manage your profile.
