@@ -141,7 +141,7 @@ We are passionate about bringing you the latest trends and timeless classics in 
 ## 📧 Contact
 
 For any queries or support, reach out at:  
-**Email:** monoro@gmail.com  
+**Email:** ninadgawade149@gmail.com
 **Phone:** +1 555-770-7727
 
 Or open an issue on [GitHub Issues](https://github.com/Ninad234/Monoro/issues)
