@@ -14,13 +14,15 @@ export const signup = async(req,res)=>{
             fullname: fullname,
             email: email,
             password: hashpassword,
+            address:''
         });
         await createdUser.save();
         res.status(200).json({
             message:" User Created Successfully",user:{
             _id: createdUser._id,
             fullname: createdUser.fullname,
-            email: createdUser.email
+            email: createdUser.email,
+            address:createdUser.address
         }});
     } catch (error) {
         console.log("Error: "+ error.message);
@@ -42,7 +44,8 @@ export const login = async (req,res) => {
             res.status(200).json({message:"Login Successful",user:{
                 _id : user._id,
                 fullname : user.fullname,
-                email : user.email
+                email : user.email,
+                address:user.address
             }})
         }
     } catch (error) {
@@ -50,3 +53,28 @@ export const login = async (req,res) => {
         res.status(500).json({message:"Internal Server Error"}); 
     }
 }
+
+export const updateAddress = async (req, res) => {
+  try {
+    const { address } = req.body;
+    const {id} = req.params;
+
+    // 1. User dhoondo aur uska address update karo
+    const updatedUser = await User.findByIdAndUpdate(
+      id, 
+      { address }, 
+      { new: true } // Isse updated wala data wapas milta hai
+    );
+
+    if (!updatedUser) {
+      return res.status(404).json({ message: "User nahi mila bhai!" });
+    }
+
+    res.status(200).json({ 
+      message: "Address updated successfully", 
+      user: updatedUser 
+    });
+  } catch (error) {
+    res.status(500).json({ message: "Server error ho gaya!", error: error.message });
+  }
+};

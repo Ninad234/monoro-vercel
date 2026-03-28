@@ -11,6 +11,7 @@ const Collection = () => {
   const { addToCart } = useCart();
   const [authUser] = useAuth();
   useEffect(() => {
+
      const getProducts = async () => {
     try {
       const res = await API.get('/product') 
@@ -37,18 +38,15 @@ const Collection = () => {
   return (
     <>
       <div className="w-full py-4 px-4 md:px-8">
-        <div className="mt-28 items-center justify-center text-center">
-          <h1 className="text-2xl font-bold md:text-5xl">
+        <div className=" items-center justify-center text-center">
+          <h1 className="text-2xl font-bold md:text-5xl dark:text-white">
             We're Delighted to have you here
-            {/* <span className="inline-block hover:scale-110 hover:rotate-12 cursor-pointer transition-transform duration-300 ease-in-out">
-              🤗
-            </span> */}
             <span className="inline-block cursor-pointer transition-all duration-300 hover:scale-110 group">
               <span className="group-hover:hidden">🙂</span>
               <span className="hidden group-hover:inline">🤗</span>
             </span>
           </h1>
-          <p className="mt-12">
+          <p className="mt-12 dark:text-gray-300">
             Fashion is more than just clothing - it's your personal expression,
             your confidence booster, and your story told without words. At our
             store, we believe everyone deserves to look and feel amazing,

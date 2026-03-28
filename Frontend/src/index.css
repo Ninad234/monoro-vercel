@@ -3,7 +3,32 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-body{
-   font-family: "Playfair Display", serif;
-   font-weight: 400;
+/* Explicitly define the dark variant for Tailwind 4 class-based dark mode */
+@variant dark (&:where(.dark, .dark *));
+
+body {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  @apply bg-white text-black dark:bg-slate-900 dark:text-white;
+}
+
+/* Ensure all background containers respond correctly */
+.bg-white {
+  @apply dark:bg-slate-900;
+}
+
+/* Ensure smooth transitions for all themed elements */
+div, section, nav, footer, input, button, span, h1, h2, h3, h4, h5, h6, p {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+@font-face {
+  font-family: 'InterNumbers';
+  src: local('Inter'); /* Uses the Inter you already imported */
+  unicode-range: U+30-39; /* Only targets digits 0-9 */
+}
+
+.numbers {
+  font-family: 'InterNumbers';
 }

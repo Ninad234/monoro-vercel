@@ -3,12 +3,12 @@ import heroImg from "../assets/hero_img.png";
 
 const Banner = () => {
   return (
-    <div className="w-full px-4 md:px-8">
-      <div className="border flex flex-col md:flex-row h-[600px]">
+    <div className="w-full px-4 md:px-8 mt-8">
+      <div className="border border-gray-200 dark:border-slate-700 flex flex-col md:flex-row h-[600px] bg-white dark:bg-slate-800 transition-colors duration-300">
         <div className="w-full md:w-1/2 flex items-center justify-center order-2">
           <div className="text-center md:text-left space-y-6 px-4 md:px-8">
-            <p className="text-xl font-medium md:text-2xl">FRESH DROPS ✨</p>
-            <h1 className="text-2xl playfair-display md:text-5xl leading-relaxed">
+            <p className="text-xl font-medium md:text-2xl dark:text-gray-300">FRESH DROPS ✨</p>
+            <h1 className="text-2xl playfair-display md:text-5xl leading-relaxed dark:text-white">
               Style For Everyone
             </h1>
             <div>

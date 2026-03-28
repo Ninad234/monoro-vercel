@@ -1,11 +1,13 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link, Navigate} from 'react-router-dom'
 import Login from './Login'
 import API from '../config/api';
 import { useForm } from "react-hook-form"
 import toast from 'react-hot-toast'
+import { useNavigate } from 'react-router-dom'
 
 const Signup = () => {
+  const navigate = useNavigate();
   const {
       register,
       handleSubmit,
@@ -22,9 +24,10 @@ const Signup = () => {
       .then((res)=>{
         console.log(res.data)
         if (res.data) {
+          localStorage.setItem("Users",JSON.stringify(res.data.user));
           toast.success('Signup Successfully !!');
+          navigate('/login');
         }
-        localStorage.setItem("Users",JSON.stringify(res.data.user));
       }).catch((err) => {
         if (err.response) {
           console.log(err);
@@ -34,18 +37,18 @@ const Signup = () => {
     }
   return (
     <>
-    <div className='flex h-screen items-center justify-center'>
-    <div className="w-[500px] p-8 rounded-md shadow-2xl">
+    <div className='flex h-screen items-center justify-center bg-white dark:bg-slate-900 transition-colors duration-300'>
+    <div className="w-[500px] p-8 rounded-md shadow-2xl bg-white dark:bg-slate-800 border dark:border-slate-700">
         <form onSubmit={handleSubmit(onSubmit)}>
-          <h3 className="font-bold text-lg">Sign Up</h3>
+          <h3 className="font-bold text-lg dark:text-white">Sign Up</h3>
           {/* Name */}
           <div className="mt-4 space-y-2">
-            <span>Name</span>
+            <span className="dark:text-gray-300">Name</span>
             <br />
             <input
               type="text"
               placeholder="Enter your Full Name"
-              className="w-80 px-3 py-2 rounded-md outline-none"
+              className="w-80 px-3 py-2 rounded-md outline-none bg-white dark:bg-slate-700 dark:text-white border dark:border-slate-600"
               {...register("fullname", { required: true })}
             />
             <br />
@@ -53,12 +56,12 @@ const Signup = () => {
           </div>
           {/* Email */}
           <div className="mt-4 space-y-2">
-            <span>Email</span>
+            <span className="dark:text-gray-300">Email</span>
             <br />
             <input
               type="email"
               placeholder="Enter your Email"
-              className="w-80 px-3 py-2 rounded-md outline-none"
+              className="w-80 px-3 py-2 rounded-md outline-none bg-white dark:bg-slate-700 dark:text-white border dark:border-slate-600"
               {...register("email", { required: true })}
             />
             <br />
@@ -66,12 +69,12 @@ const Signup = () => {
           </div>
           {/* Password */}
           <div className="mt-4 space-y-2">
-            <span>Password</span>
+            <span className="dark:text-gray-300">Password</span>
             <br />
             <input
               type="password"
               placeholder="Enter your password"
-              className="w-80 px-3 py-2 rounded-md outline-none"
+              className="w-80 px-3 py-2 rounded-md outline-none bg-white dark:bg-slate-700 dark:text-white border dark:border-slate-600"
               {...register("password", { required: true })}
             />
             <br />
@@ -82,7 +85,7 @@ const Signup = () => {
             <button type="submit" className="bg-black text-white rounded-md px-3 py-1 hover:bg-gray-400 duration-300 cursor-pointer">
               Sign Up
             </button>
-            <p>
+            <p className="dark:text-gray-300">
               Have Account ?{" "}
               <button type="button"
                 className="underline text-blue-500 cursor-pointer"

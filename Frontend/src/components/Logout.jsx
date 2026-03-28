@@ -18,7 +18,8 @@ const Logout = () => {
       // } else {
       //   navigate("/"); // Baaki jagah se logout = Home page
       // }
-      window.location.href = "/";
+      // window.location.href = "/";
+      navigate("/"); 
     } catch (error) {
       toast.error("Error " + error.message);
     }

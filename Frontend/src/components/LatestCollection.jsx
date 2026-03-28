@@ -76,10 +76,10 @@ const LatestCollection = () => {
   };
   return (
     <>
-      <div className="w-full px-4 md:px-8 py-4 mb-12">
+      <div className="w-full px-4 md:px-8 py-4 mb-12 bg-white dark:bg-slate-900 transition-colors duration-300">
         <div className="mb-5">
-          <h1 className="text-black bg-white text-2xl mb-4 font-bold">Best Offers !!</h1>
-          <p className="text-black bg-white text-xl space-y-2">
+          <h1 className="text-black dark:text-white text-2xl mb-4 font-bold">Best Offers !!</h1>
+          <p className="text-black dark:text-white text-xl space-y-2">
             Upgrade your wardrobe without breaking the bank!
             <br />
             <b>Hurry!</b> Limited-time offer. <b>Enjoy Flat 28% OFF </b>on our Free Collection!

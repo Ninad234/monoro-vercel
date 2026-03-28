@@ -6,11 +6,9 @@ import Collection from '../components/Collection'
 const Collections = () => {
   return (
     <>
-     <Navbar/>
     <div className='min-h-screen mt-9'>
         <Collection/>
     </div>
-    <Footer/>
     </>
   )
 }
