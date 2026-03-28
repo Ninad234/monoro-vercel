@@ -65,8 +65,6 @@ const CheckoutForm = () => {
     if (authUser && authUser.fullname) {
       setShipping(prev => ({ ...prev, name: authUser.fullname, address: authUser.address || prev.address }));
     }
-    console.log("AuthUser Data:", authUser);
-    console.log("Address Data:", authUser.address);
   }, [authUser]);
 
   const handleSubmit = async (e) => {
@@ -101,10 +99,8 @@ const CheckoutForm = () => {
         localStorage.setItem("Users", JSON.stringify(updateUser));
         setAuthUser(updateUser)
 
-        console.log("Address updated Successfully");
         } catch (error) {
           console.log("Address save nhi hua");
-          
         }
         
         // Create order in backend
