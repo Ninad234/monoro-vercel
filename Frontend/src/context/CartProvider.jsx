@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import API from '../config/api';
 import { useAuth } from './AuthProvider';
 
+
 const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {

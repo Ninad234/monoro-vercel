@@ -1,102 +1,292 @@
 [
   {
-    "id": 1,
-    "name": "Women Round Neck Cotton Top",
-    "image": "/assets/images/women round neck cotton top.jpeg",
+    "name": "Cotton Round Neck T-shirt",
+    "image": "https://images.unsplash.com/photo-1761955297537-1ad60a0f886d?q=80&w=800&auto=format&fit=crop",
     "price": 599,
-    "category": "Trending",
+    "category": "Men",
+    "subCategory": "Trending",
     "rating": 4.7,
+    "sizes": ["S", "M", "L", "XL"],
     "description": "Everyday style redefined in this cotton top. Lightweight and versatile for any casual look."
   },
   {
-    "id": 2,
-    "name": "Blue Ripped Jeans",
-    "image": "/assets/images/Blue Ripped Jeans.jpeg",
+    "name": "Male Black Slim Fit Jeans",
+    "image": "https://images.unsplash.com/photo-1665672017097-205fe870657f?q=80&w=800&auto=format&fit=crop",
     "price": 1099,
-    "category": "Flat 28% OFF",
+    "category": "Men",
+    "subCategory": "Flat 28% OFF",
     "rating": 4.3,
-    "description": "Stay effortlessly cool in these stylish blue ripped jeans. Perfect blend of rugged charm and urban fashion."
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Stay effortlessly cool in these stylish Black Slim Fit jeans. Perfect blend of rugged charm and urban fashion."
   },
   {
-    "id": 3,
-    "name": "Unisex White Sneakers",
-    "image": "/assets/images/unisexwhitesneakers.jpeg",
+    "name": "Female Beige Trousers",
+    "image": "https://images.unsplash.com/photo-1766056278792-d5b15656b7e8?q=80&w=800&auto=format&fit=crop",
     "price": 1899,
-    "category": "Trending",
+    "category": "Women",
+    "subCategory": "Trending",
     "rating": 4.8,
+    "sizes": ["S", "M", "L", "XL"],
     "description": "Clean, classic white sneakers to match any outfit. Unisex fit with all-day walking comfort."
   },
   {
-    "id": 4,
-    "name": "Boy round neck cotton t-shirt",
-    "image": "/assets/images/boy round neck cotton t-shirt.jpeg",
+    "name": "Urban Graphic Tee",
+    "image": "https://images.unsplash.com/photo-1758267928032-acca4f9b90f3?q=80&w=800&auto=format&fit=crop",
     "price": 999,
-    "category": "Flat 28% OFF",
+    "category": "Men",
+    "subCategory": "Flat 28% OFF",
     "rating": 4.2,
-    "description": "Soft and breathable cotton tee for everyday comfort. Classic round neck design ideal for playful days."
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Soft and breathable cotton tee for everyday comfort. Classic round neck desr playful days."
   },
   {
-    "id": 5,
-    "name": "Girl round neck cotton top",
-    "image": "/assets/images/girl round neck cotton top.jpeg",
+    "name": "Male Leather Black Jacket",
+    "image": "https://images.unsplash.com/photo-1675877879221-871aa9f7c314?q=80&w=800&auto=format&fit=crop",
     "price": 799,
-    "category": "Trending",
+    "category": "Men",
+    "subCategory": "Trending",
     "rating": 4.5,
-    "description": "Soft and breathable cotton tee for everyday comfort. Classic round neck design ideal for playful days."
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Soft and breathable cotton tee for everyday comfort. Classic round neck desr playful days."
   },
   {
-    "id": 6,
-    "name": "Kid tapered slim fit trouser",
-    "image": "/assets/images/kid tapered slim fit trouser.jpeg",
+    "name": "Male Brown Bomber Jacket",
+    "image": "https://images.unsplash.com/photo-1771310961655-b1f044b227ab?q=80&w=800&auto=format&fit=crop",
     "price": 1349,
-    "category": "Flat 28% OFF",
+    "category": "Men",
+    "subCategory": "Flat 28% OFF",
     "rating": 4.6,
-    "description": "Trendy slim fit trousers with a modern tapered cut. Durable and comfy for all-day wear and play."
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Trendy slim fit Bomber Jacket with a modern tapered cut. Durable and comfy for all-day wear and play."
   },
   {
-    "id": 7,
-    "name": "Women zip-front relaxed fit black jacket",
-    "image": "/assets/images/women zip-front relaxed fit black jacket.jpeg",
+    "name": "Unisex Toddler Hoodie",
+    "image": "https://images.unsplash.com/photo-1745680432140-15e9afb6b044?q=80&w=800&auto=format&fit=crop",
     "price": 499,
-    "category": "Trending",
+    "category": "Kids",
+    "subCategory": "Trending",
     "rating": 4.4,
-    "description": "A bold black jacket with easy zip-front styling. Relaxed fit meets sharp, effortless vibes."
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "A bold black Toddler Hoddie with easy zip-front styling. Relaxed fit meets sharp, effortless vibes."
   },
   {
-    "id": 8,
-    "name": "Women zip-front relaxed fit brown jacket",
-    "image": "/assets/images/women zip-front relaxed fit brown jacket.jpeg",
+    "name": "Male Athletic Runners Shoes",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop",
     "price": 499,
-    "category": "Trending",
+    "category": "Men",
+    "subCategory": "Trending",
     "rating": 4.4,
-    "description": "A bold brown jacket with easy zip-front styling. Relaxed fit meets sharp, effortless vibes."
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "A bold Athletic Runners Shoes for everyday comfort."
   },
   {
-    "id": 9,
-    "name": "Men slim fit relaxed denim jacket",
-    "image": "/assets/images/men slim fit relaxed denim jacket.jpeg",
+    "name": "Unisex Minimalist Canvas",
+    "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=800&auto=format&fit=crop",
     "price": 499,
-    "category": "Flat 28% OFF",
+    "category": "Men",
+    "subCategory": "Flat 28% OFF",
     "rating": 4.4,
-    "description": "Elevate your streetwear game with this sleek denim jacket. Relaxed fit ensures comfort with every layer."
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "The Minimalist Canvas cofy and lightweight unisex shoes."
   },
   {
-    "id": 10,
-    "name": "Men tapered fit trousers",
-    "image": "/assets/images/men tapered fit trousers.jpeg",
+    "name": "Female Yellow Summer Top",
+    "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
     "price": 1349,
-    "category": "Trending",
+    "category": "Women",
+    "subCategory": "Trending",
     "rating": 4.3,
-    "description": "Smart, tapered design meets everyday elegance. Ideal for both work and weekend wear."
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "A bright yellow top perfect for summer days. Lightweight and comfortable for all-day wear."
   },
   {
-    "id": 11,
-    "name": "Women Round Neck Cotton Gray Top",
-    "image": "/assets/images/women round neck cotton gray top.jpeg",
+    "name": "Male Classic Denim Jacket",
+    "image": "https://images.unsplash.com/photo-1505022610485-0249ba5b3675?q=80&w=800&auto=format&fit=crop",
     "price": 599,
-    "category": "Flat 28% OFF",
+    "category": "Men",
+    "subCategory": "Flat 28% OFF",
     "rating": 4.3,
-    "description": "Minimalist gray top in premium cotton fabric. A wardrobe essential with soft elegance."
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "A timeless denim jacket with a modern fit. Perfect for layering and everyday style."
+  },
+  {
+    "name": "Female Minimalist Gray Top",
+    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=800&auto=format&fit=crop",
+    "price": 400,
+    "category": "Women",
+    "subCategory": "Trending",
+    "rating": 4.7,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "A timeless gray top with a modern fit. Perfect for layering and everyday style."
+  },
+  {
+    "name": "Male Classic White Sneakers",
+    "image": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=800&auto=format&fit=crop",
+    "price": 900,
+    "category": "Men",
+    "subCategory": "Trending",
+    "rating": 4.4,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Step up your style game with these classic white sneakers. Perfect for everyday wear and pair well with any outfit."
+  },
+  {
+    "name": "Unisex Urban Hoddie",
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=800&auto=format&fit=crop",
+    "price": 700,
+    "category": "Men",
+    "subCategory": "Trending",
+    "rating": 4.3,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "A Unisex Urban Hoddie with a modern fit. Perfect for layering and everyday style."
+  },
+  {
+    "name": "Men's Polo Shirt",
+    "image": "https://images.unsplash.com/photo-1653694053345-b22f94c95bcf?q=80&w=800&auto=format&fit=crop",
+    "price": 1900,
+    "category": "Men",
+    "subCategory": "Trending",
+    "rating": 4.9,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "A timeless polo shirt with a modern fit. Perfect for layering and everyday style."
+  },
+  {
+    "name": "Women's Power Blazer",
+    "image": "https://images.unsplash.com/photo-1681622341243-f57c21b519f3?q=80&w=800&auto=format&fit=crop",
+    "price": 2000,
+    "category": "Women",
+    "subCategory": "Flat 28% OFF",
+    "rating": 4.9,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "A timeless Women's blazer with a comfy modern fit. Perfect for layering and everyday style."
+  },
+  {
+    "name": "Unisex Luxury Sunglasses",
+    "image": "https://images.unsplash.com/photo-1762706334838-ea8425b43116?q=80&w=800&auto=format&fit=crop",
+    "price": 850,
+    "category": "Men",
+    "subCategory": "Trending",
+    "rating": 4.9,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "A timeless Unisex Luxury Sunglasses with a comfy modern fit. Perfect for layering and everyday style."
+  },
+  {
+    "name": "Female Leather Tote Bag",
+    "image": "https://images.unsplash.com/photo-1760624294504-211e763ee0fb?q=80&w=800&auto=format&fit=crop",
+    "price": 850,
+    "category": "Women",
+    "subCategory": "Flat 28% OFF",
+    "rating": 4.9,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "A timeless Female Leather Tote Bag with a comfy modern fit. Perfect for layering and everyday style."
+  },
+  {
+    "name": "Men's Chino Shorts",
+    "image": "https://images.unsplash.com/photo-1697319452360-ee47502e39f6?q=80&w=800&auto=format&fit=crop",
+    "price": 800,
+    "category": "Men",
+    "subCategory": "Trending",
+    "rating": 4.9,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "A luxury Men's Chino shorts with a comfy mordern fit and give you luxurious look"
+  },
+  {
+    "name": "Tweed Midi Skirt",
+    "image": "https://images.unsplash.com/photo-1615898290907-0ad011905389?q=80&w=800&auto=format&fit=crop",
+    "price": 600,
+    "category": "Women",
+    "subCategory": "Flat 28% OFF",
+    "rating": 4.5,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": " A Tweet Midi Skirt for women with all the luxury and comfort you need, available in all the sizes."
+  },
+  {
+    "name": "Male Classic Oxford Shoes",
+    "image": "https://images.unsplash.com/photo-1772678144516-4fddf7635ab4?q=80&w=800&auto=format&fit=crop",
+    "price": 900,
+    "category": "Men",
+    "subCategory": "Trending",
+    "rating": 4.8,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": " A Male Classic Oxford Shoes with all the comfy fit and give you luxurious look"
+  },
+  {
+    "name": "Female Wool Winter Coat",
+    "image": "https://images.unsplash.com/photo-1680690395101-1b2a56c0ac21?q=80&w=800&auto=format&fit=crop",
+    "price": 950,
+    "category": "Women",
+    "subCategory": "Flat 28% OFF",
+    "rating": 4.8,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": " A Female Wool Winter Coat with all the comfy and luxirious look"
+  },
+  {
+    "name": "Female Activewear Set",
+    "image": "https://images.unsplash.com/photo-1768929096297-ba9fde63f58f?q=80&w=800&auto=format&fit=crop",
+    "price": 750,
+    "category": "Women",
+    "subCategory": "Trending",
+    "rating": 4.2,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": " A Female ActiveWear set with all the comfy for your workout."
+  },
+  {
+    "name": "Kid's Basic T-shirt",
+    "image": "https://images.unsplash.com/photo-1681551210466-a03ef45baed5?q=80&w=800&auto=format&fit=crop",
+    "price": 2500,
+    "category": "Kids",
+    "subCategory": "Trending",
+    "rating": 4.9,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "A Kid's basic T-shirt with all the comfy and soft fabric."
+  },
+  {
+    "name": "Kid's Pajamas",
+    "image": "https://images.unsplash.com/photo-1752047763304-df3b84798b37?q=80&w=800&auto=format&fit=crop",
+    "price": 1500,
+    "category": "Kids",
+    "subCategory": "Flat 28% OFF",
+    "rating": 4.7,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Kid's Pajamas with total comfy and soft fabric."
+  },
+  {
+    "name": "Female Summer Sandals",
+    "image": "https://images.unsplash.com/photo-1677922336239-d6978d0d2af2?q=80&w=800&auto=format&fit=crop",
+    "price": 2500,
+    "category": "Women",
+    "subCategory": "Trending",
+    "rating": 4.5,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "A Female Summer Sandals with all the comfy and soft fabric for your summer days."
+  },
+  {
+    "name": "Male Luxury Wristwatch",
+    "image": "https://images.unsplash.com/photo-1742631193849-acc045ea5890?q=80&w=800&auto=format&fit=crop",
+    "price": 1800,
+    "category": "Men",
+    "subCategory": "Trending",
+    "rating": 4.4,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "A Luxury Wristwatch for men that give them a luxirious look, available in all the sizes."
+  },
+  {
+    "name": "Female Soft Knit Cardigan",
+    "image": "https://images.unsplash.com/photo-1742631193849-acc045ea5890?q=80&w=800&auto=format&fit=crop",
+    "price": 1600,
+    "category": "Women",
+    "subCategory": "Flat 28% OFF",
+    "rating": 4.6,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Crafted from soft, premium fabric, this women’s knit cardigan is the perfect comfortable layer for cold winter days."
+  },
+  {
+    "name": "Male Streetwear Cargo Pants",
+    "image": "https://images.unsplash.com/photo-1758267928031-a87e5a5c6c5b?q=80&w=800&auto=format&fit=crop",
+    "price": 1800,
+    "category": "Men",
+    "subCategory": "Trending",
+    "rating": 4.9,
+    "sizes": ["S", "M", "L", "XL"],
+    "description": "Step up your street style with these trendy cargo pants, featuring a modern fit and premium fabric for all-day comfort."
   }
 ]
-

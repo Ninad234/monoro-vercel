@@ -17,8 +17,22 @@ const Contact = () => {
       await API.post('/contact', form);
       toast.success("Thank you for contacting us! We'll get back to you soon.");
       setForm({ name: '', email: '', message: '' });
+    //      // यहाँ अपनी Email ID डालें
+    // const myEmail = "your-email@gmail.com"; 
+    
+    // const subject = encodeURIComponent(`Contact Inquiry from ${name}`);
+    
+    // // Body में Name, Email और Message को फॉर्मेट करना
+    // const body = encodeURIComponent(
+    //   `Name: ${name}\n` +
+    //   `Email: ${email}\n\n` +
+    //   `Message:\n${message}`
+    // );
+
+    // // Mailto link open करना
+    // window.location.href = `mailto:${myEmail}?subject=${subject}&body=${body}`;
     } catch (error) {
-      toast.error("Failed to send message. Please try again later.");
+      toast.error("Failed to send message. Please try again later.",error);
     }
     setLoading(false);
   };

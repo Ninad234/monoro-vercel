@@ -4,6 +4,7 @@ import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Collections from "./Collections/Collections";
 import Signup from "./components/Signup";
 import toast,{ Toaster } from "react-hot-toast";
+import ProductDetails from "./components/Card-details";
 import { useAuth } from "./context/AuthProvider";
 import { CartProvider } from "./context/CartProvider";
 import Cart from "./components/Cart";
@@ -28,7 +29,7 @@ const App = () => {
   };
 
   return (
-    <>
+    <div className="px-3 sm:px-[5vw] md:px-[3vw]">
     <CartProvider className="w-full">
       <Navbar />
       <Routes>
@@ -53,11 +54,12 @@ const App = () => {
         <Route path="/orders" element={<Orders />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
       </Routes>
       <Toaster position="top-right" reverseOrder={false}/>
       <Footer />
     </CartProvider>
-    </>
+    </div>
   );
 };
 

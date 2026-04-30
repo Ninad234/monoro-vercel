@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="w-full py-8 px-4 md:px-8 mt-10 bg-gray-100 dark:bg-slate-900 text-black dark:text-white transition-colors duration-300">
+    <footer className="w-full py-8 px-4 md:px-8 mt-10 bg-white dark:bg-slate-900 text-black dark:text-white transition-colors duration-300">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full">
-        <div className="flex flex-col mb-6 md:mb-0">
+        <div className="flex flex-col md:mb-0">
           <h1 className="text-black dark:text-white text-3xl font-bold mb-2">Monoro</h1>
           <p className="text-sm text-gray-600 dark:text-gray-400">Monoro Clothing Industries Ltd.</p>
           <p className="text-sm text-gray-600 dark:text-gray-400">Providing reliable products since 2020</p>

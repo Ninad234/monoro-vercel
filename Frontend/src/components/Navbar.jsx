@@ -4,6 +4,8 @@ import { useAuth } from "./../context/AuthProvider";
 import Logout from "./Logout";
 import { Link } from 'react-router-dom';
 import { useTheme } from "../context/ThemeContext";
+import { NavLink } from "react-router-dom";
+import {motion} from 'motion/react';
 
 const Navbar = () => {
   const [authUser, setAuthUser] = useAuth();
@@ -41,23 +43,65 @@ const Navbar = () => {
 
   const navItems = (
     <>
-      <li>
-        <a href="/" className="text-black dark:text-white font-bold hover:bg-gray-500 hover:text-white">Home</a>
-      </li>
-      <li>
-        <a href="/collection" className="text-black dark:text-white font-bold hover:bg-gray-500 hover:text-white">Collection</a>
-      </li>
-      <li>
-        <a href="/about" className="text-black dark:text-white font-bold hover:bg-gray-500 hover:text-white">About</a>
-      </li>
-      <li>
-        <a href="/contact" className="text-black dark:text-white font-bold hover:bg-gray-500 hover:text-white">Contact us</a>
-      </li>
+      <motion.li whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}>
+        {/* <a href="/" className="text-black dark:text-white font-bold hover:bg-gray-500 hover:text-white">Home
+        <hr className="w-1/2"/></a> */}
+        <NavLink to="/" className="text-black dark:text-white flex flex-col">
+        {({isActive}) =>(
+          <>
+          <p>Home</p>
+          <hr 
+          className={`w-full h-[1.5px] ${isActive ? "block" : 'hidden'}`}
+          />
+          </>
+        )}
+        </NavLink>
+      </motion.li>
+      <motion.li whileHover={{scale:1.05}} whileTap={{scale:0.95}}>
+        {/* <a href="/collection" className="text-black dark:text-white font-bold hover:bg-gray-500 hover:text-white">Collection</a> */}
+        <NavLink to="/collection" className="text-black dark:text-white border-none flex flex-col">
+        {({isActive}) =>(
+          <>
+          <p>Collection</p>
+          <hr 
+          className={`w-full h-[1.5px] ${isActive ? "block" : 'hidden'}`}
+          />
+          </>
+        )}
+        </NavLink>
+      </motion.li>
+      <motion.li whileHover={{scale:1.05}} whileTap={{scale:0.95}}>
+        {/* <a href="/about" className="text-black dark:text-white font-bold hover:bg-gray-500 hover:text-white">About</a> */}
+        <NavLink to='/about' className='text-black dark:text-white border-none flex flex-col'>
+        {({isActive})=>(
+          <>
+          <p>About</p>
+          <hr
+          className={`w-full h-[1.5px] ${isActive ? 'block' : 'hidden'}`} 
+          />
+          </>
+        )}
+        </NavLink>
+      </motion.li>
+      <motion.li whileHover={{scale:1.05}} whileTap={{scale:0.95}}>
+        {/* <a href="/contact" className="text-black dark:text-white font-bold hover:bg-gray-500 hover:text-white">Contact us</a> */}
+        <NavLink to='/contact' className='text-black dark:text-white border-none flex flex-col'>
+        {({isActive}) => (
+          <>
+          <p>Contact</p>
+          <hr 
+          className={`w-full h-[1.5px] ${isActive ? 'block' : 'hidden'}`}
+          />
+          </>
+        )}
+        </NavLink>
+      </motion.li>
     </>
   );
   return (
-    <nav className={`w-full navbar shadow-md sticky top-0 z-50 transition-colors duration-300 ${theme === "dark" ? "bg-slate-900 text-white" : "bg-white text-black"}`}>
-      <div className="w-full flex items-center justify-between m-0 p-0">
+    <nav className={`w-full navbar sticky top-0 z-50 transition-colors duration-300 ${theme === "dark" ? "bg-slate-900 text-white" : "bg-white text-black"}`}>
+      <div className="w-full flex items-center justify-between px-6">
           <div className="navbar-start">
             <div className="dropdown">
               <div
@@ -83,7 +127,7 @@ const Navbar = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-300 rounded-box z-[1] mt-3 w-52 p-2 shadow-md"
+                className="menu menu-sm [--menu-active-bg:transparent] dropdown-content bg-base-300 rounded-box z-[1] mt-3 w-52 p-2 shadow-md"
               >
                 {navItems}
               </ul>
@@ -93,12 +137,12 @@ const Navbar = () => {
             </a>
           </div>
           {/* Navitems */}
-          <div className="navbar-end space-x-3">
+          <div className="navbar-center space-x-3">
             <div className="navbar-center hidden lg:flex">
-              <ul className="menu menu-horizontal px-1">{navItems}</ul>
+              <ul className="menu menu-horizontal [--menu-active-bg:transparent] px-1">{navItems}</ul>
             </div>
             {/* Search Bar */}
-            <div className="hidden md:block">
+            {/* <div className="hidden md:block">
               <label className="px-3 py-2 input input-ghost rounded-md bg-transparent dark:bg-slate-800 border dark:border-slate-700">
                 <input
                   type="search"
@@ -122,7 +166,9 @@ const Navbar = () => {
                   </g>
                 </svg>
               </label>
+            </div> */}
             </div>
+            <div className="navbar-end space-x-2">
             {/* Theme label */}
             <label className="swap swap-rotate">
               {/* this hidden checkbox controls the state */}
@@ -151,17 +197,21 @@ const Navbar = () => {
                 <path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
               </svg>
             </label>
-            <Link to="/cart" className="ml-4 flex items-center text-black dark:text-white hover:text-primary dark:hover:text-primary transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7">
+            <Link to="/cart" className="relative">
+              {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437m0 0L7.5 15.75A2.25 2.25 0 009.66 18h7.59a2.25 2.25 0 002.16-1.59l2.25-7.5A1.125 1.125 0 0020.25 6H6.272m-1.166 0L4.5 4.5m0 0L3.75 3m.75 1.5h16.5" />
-              </svg>
+              </svg> */}
+              <img src={"/cart_icon.png"} className="w-3 min-w-5 dark:invert dark:brightness-200" alt="Cart Icon" />
+              <p className="absolute  bottom-[-4px] right-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[10px]">10</p>
             </Link>
-            <Link to="/orders" className="ml-4 font-semibold text-black dark:text-white hover:text-primary dark:hover:text-primary transition-colors">Orders</Link>
+            <Link to="/orders" className="ml-2 font-semibold text-black dark:text-white hover:text-primary dark:hover:text-primary transition-colors">
+            <img src="/order_icon.png" alt="Orders" className="dark:invert dark:brightness-200"/>
+            </Link>
 
             {authUser ? (
               <div className="flex items-center space-x-2">
                 <span className="hidden sm:block text-sm dark:text-gray-300">
-                  Welcome, {authUser.fullname || authUser.email || "User"}
+                  {/* Welcome, {authUser.fullname || authUser.email || "User"} */}
                 </span>
                 <Logout />
               </div>
@@ -181,7 +231,7 @@ const Navbar = () => {
                 <Login />
               </div>
             )}
-          </div>
+        </div>
         </div>
     </nav>
   );

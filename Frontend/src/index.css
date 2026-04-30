@@ -11,6 +11,7 @@ body {
   font-weight: 400;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
   @apply bg-white text-black dark:bg-slate-900 dark:text-white;
+  font-variant-numeric: 'InterNumbers'; /* नंबर्स को एक लाइन में रखने के लिए */
 }
 
 /* Ensure all background containers respond correctly */
@@ -31,4 +32,10 @@ div, section, nav, footer, input, button, span, h1, h2, h3, h4, h5, h6, p {
 
 .numbers {
   font-family: 'InterNumbers';
+}
+
+.image-style {
+  width: 800px;
+  height: 200px;
+  object-fit: cover;
 }
