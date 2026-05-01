@@ -80,14 +80,14 @@ const Banner = () => {
   </div>
   <div  className="carousel-item relative w-full h-[500px] md:h-[600px] overflow-hidden flex-shrink-0">
     <img
-      src="../public/man.jpg"
+      src="man.jpg"
       className="w-full" />
     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
     </div>
   </div>
   <div className="carousel-item relative w-full h-[500px] md:h-[600px] overflow-hidden flex-shrink-0">
     <img
-      src="../public/women.jpg"
+      src="women.jpg"
       className="w-full" />
     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
     </div>
