@@ -1,7 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import heroImg from "../assets/hero_img.webp";
+import {useNavigate} from 'react-router-dom';
 
 const Banner = () => {
+  const navigate = useNavigate();
   const carouselRef = useRef(null);
   useEffect(() => {
     let currentSlide = 0;
@@ -22,6 +24,10 @@ const Banner = () => {
     }, 3000);
       return () => clearInterval(interval);
   }, []);
+
+  const handleNavigation = () => {
+    navigate('/collection')
+  }
   
 // const totalSlides = 4; // Jitne slides tune dale hain
 // let currentSlide = 0;
@@ -74,7 +80,7 @@ const Banner = () => {
       className="w-full h-full" />
     <p className="absolute text-black top-32 left-24 dark:text-black -translate-y-1/2 z-10 font-bold text-5xl">Fresh Drops ✨</p>
     <h1 className="text-black absolute top-42 left-24 -translate-y-1/2 z-10 text-4xl font-medium mt-2"> Style For Everyone </h1>
-    <button className="p-4 font-medium bg-black absolute top-48 left-24 text-white mt-4 rounded-md hover:bg-gray-600 active:bg-gray-900 cursor-pointer">SHOP NOW</button>
+    <button className="p-4 font-medium bg-black absolute top-48 left-24 text-white mt-4 rounded-md hover:bg-gray-600 active:bg-gray-900 cursor-pointer" onClick={handleNavigation}>SHOP NOW</button>
     <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
     </div>
   </div>
