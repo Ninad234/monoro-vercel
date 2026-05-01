@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import API from "../config/api";
-import list from "../assets/list.json";
 import Cards from "../components/Cards";
 import { useCart } from '../context/CartProvider';
 import toast, {Toaster} from 'react-hot-toast';
