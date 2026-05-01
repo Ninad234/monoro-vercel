@@ -7,6 +7,7 @@ import { CiStar } from "react-icons/ci";
 import { FaStar } from "react-icons/fa6";
 import {motion} from 'motion/react';
 import Cards from "./Cards";
+import toast from "react-hot-toast";
 
 
 const ProductDetails = () => {
@@ -57,8 +58,10 @@ const ProductDetails = () => {
     try {
       await addToCart(product);
       navigate('/cart');
+      toast.success("Your product has been added to cart"); 
     } catch (error) {
       console.error("Error adding to the cart",error);
+      toast.error("Error occured while adding product to cart");
     }
   }
 
